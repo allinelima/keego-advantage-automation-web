@@ -1,0 +1,82 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Adicionar produtos ao carrinho de compras",
+    "line": 1,
+    "id": "adicionar-produtos-ao-carrinho-de-compras",
+    "tags": [],
+    "uri": "adicionaCarrinho.feature",
+    "elements": [
+      {
+        "id": "adicionar-produtos-ao-carrinho-de-compras;adicionar-um-produto-ao-carrinho-com-sucesso",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Adicionar um produto ao carrinho com sucesso",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que eu estou na página inicial do site Advantage Online Shopping",
+            "result": {
+              "status": "passed",
+              "duration": 3293000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "adiciona um produto ao carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 6821000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "o usuário clica no produto desejado",
+            "result": {
+              "status": "passed",
+              "duration": 1095000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "o usuário seleciona a cor e a quantidade do produto",
+            "result": {
+              "status": "passed",
+              "duration": 702000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "o usuário clica no botão \"Adicionar ao Carrinho\"",
+            "result": {
+              "status": "passed",
+              "duration": 312000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "o produto deve ser adicionado ao carrinho com as opções selecionadas",
+            "result": {
+              "status": "passed",
+              "duration": 614000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

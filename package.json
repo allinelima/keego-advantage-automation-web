@@ -1,0 +1,28 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Automated tests with Cypress and Cucumber",
+  "main": "index.js",
+  "author": "Aline Lima",
+  "devDependencies": {
+    "@faker-js/faker": "^9.0.3",
+    "cypress": "^9.3.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1"
+  },
+  "scripts": {
+    "test": "npx cypress open",
+    "test_run": "npx cypress run",
+    "postcypress:run": "node ./cypress/support/multiple-cucumber-html-reporter.js"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/integration/features/**/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".json"
+    }
+  }
+}
