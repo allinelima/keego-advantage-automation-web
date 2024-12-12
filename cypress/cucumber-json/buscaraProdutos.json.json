@@ -1,0 +1,132 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Buscar Produtps",
+    "line": 1,
+    "id": "buscar-produtps",
+    "tags": [],
+    "uri": "buscaraProdutos.feature",
+    "elements": [
+      {
+        "id": "buscar-produtps;buscar-um-produto-com-sucesso",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Buscar um produto com sucesso",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que o usuário acessou a página inicial do site Advantage Online Shopping",
+            "result": {
+              "status": "passed",
+              "duration": 34602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "o usuário clica no ícone de lupa no cabeçalho do site",
+            "result": {
+              "status": "passed",
+              "duration": 2500000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "o usuário digita o nome de um produto válido na barra de pesquisa",
+            "result": {
+              "status": "passed",
+              "duration": 7339000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "o usuário clica em 'View All'",
+            "result": {
+              "status": "passed",
+              "duration": 718000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "o sistema deve retornar uma lista de produtos relacionados ao nome buscado",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'BEATS STUDIO 2 OVER-EAR MATTE BLACK HEADPHONES' within the element: [ <h3.roboto-medium.ng-scope>, 1 more... ] but never did.\n    at HomePage.seeProducts (https://www.advantageonlineshopping.com/__cypress/tests?p=cypress/integration/features/buscaraProdutos.feature:262:88)\n    at Context.eval (https://www.advantageonlineshopping.com/__cypress/tests?p=cypress/integration/features/buscaraProdutos.feature:89:39)\n    at Context.resolveAndRunStepDefinition (https://www.advantageonlineshopping.com/__cypress/tests?p=cypress/integration/features/buscaraProdutos.feature:11050:29)\n    at Context.eval (https://www.advantageonlineshopping.com/__cypress/tests?p=cypress/integration/features/buscaraProdutos.feature:10371:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "buscar-produtps;buscar-um-produto-inexistente",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Buscar um produto inexistente",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que o usuário acessou a página inicial do site Advantage Online Shopping",
+            "result": {
+              "status": "passed",
+              "duration": 4801000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "o usuário clica no ícone de lupa no cabeçalho do site",
+            "result": {
+              "status": "passed",
+              "duration": 2523000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "o usuário digita um nome de produto inexistente na barra de pesquisa",
+            "result": {
+              "status": "passed",
+              "duration": 6916000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "clica em \"Enter\"",
+            "result": {
+              "status": "passed",
+              "duration": 715000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "o sistema deve retornar uma mensagem informando que nenhum resultado foi encontrado",
+            "result": {
+              "status": "passed",
+              "duration": 70000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
